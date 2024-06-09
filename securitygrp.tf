@@ -2,7 +2,7 @@
 resource "aws_security_group" "kazi-sg" {
   name        = "kazi-sg"
   description = "Allow all inbound and outbound traffic"
-  vpc_id = aws_vpc.Kazi.id
+  vpc_id = aws_vpc.kazi.id
 
 tags = {
     Name = "kazi-sg"
