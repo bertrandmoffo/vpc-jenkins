@@ -2,7 +2,7 @@
 #public rt
 
 resource "aws_route_table" "public-rt" {
-    vpc_id = aws_vpc.Kazi.id
+    vpc_id = aws_vpc.kazi.id
 
     route  {
         cidr_block = "0.0.0.0/0"
@@ -17,7 +17,7 @@ resource "aws_route_table" "public-rt" {
 //private rt
 
 resource "aws_route_table" "private-rt" {
-    vpc_id = aws_vpc.Kazi.id
+    vpc_id = aws_vpc.kazi.id
 
   tags = {
     Name = "private-rt"

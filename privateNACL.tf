@@ -2,7 +2,7 @@
 #Creating Network ACL at the Private Subnet
 
 resource "aws_network_acl" "pri-nacl" {
-  vpc_id = aws_vpc.Kazi.id
+  vpc_id = aws_vpc.kazi.id
   subnet_ids = [aws_subnet.private.id]
   
 

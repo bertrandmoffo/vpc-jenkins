@@ -1,4 +1,4 @@
-
+/*
 # Configuring the Remote Backend With S3
 terraform {
   backend "s3" {

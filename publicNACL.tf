@@ -2,7 +2,7 @@
 # Creating Network ACL at the Public Subnet
 
 resource "aws_network_acl" "pub-nacl" {
-  vpc_id = aws_vpc.Kazi.id
+  vpc_id = aws_vpc.kazi.id
   subnet_ids = [aws_subnet.public.id]
 
   ingress {
